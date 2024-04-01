@@ -1,0 +1,100 @@
+/* Define the common styles for the loader container */
+.loader {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  gap: 7px;
+}
+
+.loader2, .loader3 {
+display: flex;
+flex-direction: column;
+gap: 5px;
+}
+
+/* Define the styles for each square with different background colors */
+.loader2 > div:nth-child(1) {
+  height: 50px;
+  width: 40px;
+  border-radius: 14px;
+  background: #F01BF4;
+  animation-name: anm-sq-15-flash-1;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+
+.loader2 > div:nth-child(2) {
+  height: 25px;
+  width: 40px;
+   border-radius: 14px;
+  background: #47CB5B;
+  animation-name: anm-sq-15-flash-2;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 0.2s;
+}
+
+.loader3 > div:nth-child(1) {
+  height: 25px;
+  width: 40px;
+   border-radius: 14px;
+   background: #3CDAF6;
+  animation-name: anm-sq-15-flash-3;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 0.6s;
+}
+
+.loader3 > div:nth-child(2) {
+  height: 50px;
+  width: 40px;
+  border-radius: 14px;
+  background: #F5B314;
+  animation-name: anm-sq-15-flash-4;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 0.4s;
+}
+
+/* Define the keyframes for the flash animations */
+@keyframes anm-sq-15-flash-1 {
+  0%, 51% {
+    background: #F01BF4 
+  }
+  1% {
+    background: gray; /* Change to gray at 1% */
+  }
+}
+
+@keyframes anm-sq-15-flash-2 {
+  0%, 51% {
+    background: #47CB5B; /* Start and end with the same color */
+  }
+  5% {
+    background: gray; /* Change to gray at 1% */
+  }
+}
+
+@keyframes anm-sq-15-flash-3 {
+  0%, 51% {
+    background: #3CDAF6; /* Start and end with the same color */
+  }
+  1% {
+    background: gray; /* Change to gray at 1% */
+  }
+}
+
+@keyframes anm-sq-15-flash-4 {
+  0%, 51% {
+    background: #F5B314; /* Start and end with the same color */
+  }
+  1% {
+    background: gray; /* Change to gray at 1% */
+  }
+}

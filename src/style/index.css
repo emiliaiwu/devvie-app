@@ -1,0 +1,213 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+html,
+body,
+#root,
+.root,
+.app-layout {
+	max-width: 100vw;
+	height: 100vh;
+	width: 100vw;
+	box-sizing: border-box;
+	white-space: nowrap;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.no-scroll {
+	overflow-y: hidden;
+}
+
+/*Logo*/
+.logo-name {
+	background-image: url("../assets/text-gradient.png");
+	background-size: contain;
+	background-clip: text;
+	--webkit-background-clip: text;
+	color: transparent;
+}
+
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button-hover:hover {
+	animation: pulse 1s;
+	transition: 0.3s ease;
+}
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	70% {
+		transform: scale(0.9);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+/* Hamburger Menu*/
+
+.hamburger-menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	cursor: pointer;
+	width: 30px;
+	height: 15px;
+	transition: transform 0.3s ease;
+}
+
+.hamburger-menu .bar {
+	width: 100%;
+	height: 2px;
+	border-radius: 2px;
+	background-color: var(--bg-color);
+	transition: all 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger-menu.active .bar:nth-child(1) {
+	width: 15px;
+}
+
+.hamburger-menu.active .bar:nth-child(2) {
+	width: 25px;
+}
+
+.hamburger-menu.active .bar:nth-child(3) {
+	width: 15px;
+}
+
+/* HERO IMAGES */
+.left-top {
+	left: 7%;
+	top: -5%;
+	transform: rotate(-8deg);
+	transform-origin: bottom right;
+}
+
+.left-middle {
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.left-bottom {
+	left: 9%;
+	bottom: 0%;
+	transform: rotate(8deg);
+	transform-origin: bottom left;
+}
+
+.right-top {
+	right: 7%;
+	top: -5%;
+	transform: rotate(8deg);
+	transform-origin: bottom left;
+}
+
+.right-middle {
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.right-bottom {
+	right: 9%;
+	bottom: 0%;
+	transform: rotate(-8deg);
+	transform-origin: bottom right;
+}
+
+/* CHANGING TEXT */
+
+.bg-changing-text {
+	/* background: white; */
+}
+
+.changing-text {
+	position: relative;
+	border-radius: 4px;
+	line-height: 1.2;
+	background-color: #F0E7FF;
+}
+
+.wipe-text {
+	position: absolute;
+	right: 0%;
+	width: 100%;
+	height: 100%;
+	background: #F6F8F8;
+	animation: wipe 4s infinite;
+	display: inline-block;
+	border-left: 4px solid #9261F3;
+}
+
+@keyframes wipe {
+	50% {
+		width: 0%;
+	}
+
+	100% {
+		width: 100%;
+	}
+}
+
+/*FORM*/
+
+.glow-input {
+	transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+}
+
+.glow-input:focus,
+.glow-input:hover {
+	border-color: rgba(0, 0, 0, 0.8);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(0, 0, 0, 0.1);
+	outline: 0 none;
+}
+
+.backdrop {
+	background: rgba(255, 255, 255, 0.5);
+	-webkit-backdrop-filter: blur(8px);
+	backdrop-filter: blur(10px);
+}
+
+.marquee-card {
+	animation: marquee 20s linear infinite;
+}
+
+.marquee-card:hover,
+.marquee-card2:hover {
+	animation-play-state: paused; /* Pause animation on hover */
+}
+
+@keyframes marquee {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
