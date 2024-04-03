@@ -22,6 +22,7 @@ export const UserPreferencesProvider = ({ children }) => {
 	const [selectedDarkShade, setSelectedDarkShade] = useState("DarkCoder");
 	const [isLightMode, setIsLightMode] = useState(false);
 	const [mode, setMode] = useState(isLightMode ? "light" : "dark");
+
 	useEffect(() => {
 		setMode(isLightMode ? "light" : "dark");
 	}, [isLightMode]);
@@ -44,7 +45,7 @@ export const UserPreferencesProvider = ({ children }) => {
 		color: accentColors[0],
 		border: selectedBorder,
 		mode: mode,
-		isLightMode: isLightMode,
+		isLightMode: false,
 		shade: selectedShade,
 		font: {
 			fontFamily: selectedFont,

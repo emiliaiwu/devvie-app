@@ -11,6 +11,8 @@ const Banner = () => {
 	const { userProfile } = useContext(UserProfileContext);
 	const { firstName } = useContext(DashboardContext);
 
+	console.log(userPreferences, 'tttt');
+
 	return (
 		<div
 			className={`${userPreferences.border}  h-full relative overflow-hidden`}

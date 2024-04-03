@@ -30,6 +30,9 @@ const Theme = () => {
 		handleCancelPreferences();
 	}, [location.pathname]);
 
+
+	
+
 	return (
 		<section
 			style={{ backgroundColor: newUserPreferences.shade.card }}

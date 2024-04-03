@@ -284,13 +284,13 @@ export const ProjectContextProvider = ({ children }) => {
 							title: statusItem.status,
 							order: index,
 						}));
-						// Save default columns to Firestore
-						// await Promise.all(
-						// 	defaultColumns.map(async (columnData) => {
-						// 		const newColumnRef = await addDoc(columnsRef, columnData);
-						// 		return { id: newColumnRef.id, ...columnData };
-						// 	})
-						// );
+						// Save default columns to Firestore i UNCOMMENTED THIS
+						await Promise.all(
+							defaultColumns.map(async (columnData) => {
+								const newColumnRef = await addDoc(columnsRef, columnData);
+								return { id: newColumnRef.id, ...columnData };
+							})
+						);
 						if (isMounted) {
 							setColumns(defaultColumns);
 							setTaskColumns(defaultTaskColumns);
