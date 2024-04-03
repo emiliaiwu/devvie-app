@@ -33,7 +33,7 @@ const Dashboard = () => {
 				<div className=' h-full relative'>
 					<div
 						style={{ backgroundColor: userPreferences.color }}
-						className={`${userPreferences.border} h-[190px] mt-12 flex justify-between items-center px-6 lg:px-20 relative `}
+						className={`${userPreferences.border} h-[190px] mt-12 flex justify-between items-center px-6 lg:px-20 relative text-black `}
 					>
 						<div
 							style={{ color: userPreferences.isLightMode ? "white" : "black" }}

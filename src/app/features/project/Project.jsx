@@ -42,7 +42,7 @@ const ProjectBoard = () => {
 			<div className='mb-4 z-[40] w-full md:pr-8'>
 				<div
 					style={{ backgroundColor: userPreferences.color }}
-					className={`${userPreferences.border} h-[190px] mt-12 flex justify-between items-center px-6 lg:px-20 relative mb-10`}
+					className={`${userPreferences.border} h-[190px] mt-12 flex justify-between items-center px-6 lg:px-20 relative mb-10 text-black`}
 				>
 					<div
 						style={{ color: userPreferences.isLightMode ? "white" : "black" }}
@@ -72,7 +72,7 @@ const ProjectBoard = () => {
 					</div>
 				</div>
 
-				<div className='flex flex-row justify-between items-center gap-4'>
+				<div className='flex flex-row justify-between items-center gap-4 text-black '>
 					<div
 						onClick={() => setIsCreateNewProjectModalOpen(true)}
 						style={{

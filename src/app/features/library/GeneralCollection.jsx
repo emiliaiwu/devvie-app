@@ -5,7 +5,7 @@ import FolderCard from "./FolderCard";
 import { AddIcon } from "../../data/icon";
 import { Link } from "react-router-dom";
 import { HoverAccentColor, NoData } from "../../components";
-import { noFiles } from "../../../assets";
+
 
 const GeneralCollection = () => {
 	const { userCollection } = useContext(LibraryContext);
@@ -20,7 +20,7 @@ const GeneralCollection = () => {
 					</Link>
 				</div>
 
-				<div className=''>
+				<div className='text-black'>
 					<button
 						onClick={() => setIsCreateNewCollectionOpen(true)}
 						style={{
@@ -42,7 +42,7 @@ const GeneralCollection = () => {
 							{userCollection?.map((collection) => (
 								<FolderCard key={collection.id} collection={collection} />
 							))}
-							<div className="hidden md:flex">
+							<div className='hidden md:flex'>
 								<CreateFolder />
 							</div>
 						</div>

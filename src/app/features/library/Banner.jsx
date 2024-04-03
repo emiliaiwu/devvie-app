@@ -17,7 +17,7 @@ const Banner = () => {
 		>
 			<div
 				style={{ backgroundColor: userPreferences.color }}
-				className={`${userPreferences.border} h-[190px] mt-12 flex justify-between items-center px-6 lg:px-20 relative `}
+				className={`${userPreferences.border} h-[190px] mt-12 flex justify-between items-center px-6 lg:px-20 relative text-black`}
 			>
 				<div
 					style={{ color: userPreferences.isLightMode ? "white" : "black" }}
@@ -35,7 +35,7 @@ const Banner = () => {
 				<div className='overflow-hidden hidden sm:flex '>
 					<img
 						src={libraryImg}
-						alt="banner image"
+						alt='banner image'
 						className='h-[250px] w-auto absolute right-0 bottom-0'
 						loading='lazy'
 					/>
