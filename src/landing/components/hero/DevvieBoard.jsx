@@ -24,12 +24,12 @@ const DevvieBoard = () => {
 				}}
 				className='xxl:max-w-[1440px] max-w-[1000px] w-full flex justify-center items-center rounded-2xl backdrop border border-[#F0E7FF] p-4 shadow-2xl relative'
 			>
-				<div
+				{/* <div
 					style={{ "--hove-color": "rgb(106,56,203)" }}
 					className='absolute '
 				>
 					<PlayButton />
-				</div>
+				</div> */}
 				<div className='rounded-2xl overflow-hidden'>
 					<img
 						src={heroImg}
