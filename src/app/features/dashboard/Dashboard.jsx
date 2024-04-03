@@ -54,6 +54,7 @@ const Dashboard = () => {
 							<img
 								src={dashboardImg}
 								className='h-[250px] w-auto absolute right-16 bottom-0'
+								loading="lazy"
 							/>
 						</div>
 					</div>

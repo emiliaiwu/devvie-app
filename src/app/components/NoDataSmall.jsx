@@ -8,7 +8,7 @@ const NoDataSmall = ({ paragraph }) => {
 	return (
 		<div className='flex flex-col px-6 justify-center items-center flex-1 max-w-[300px] max-h-[300px] w-full h-full'>
 			<div className='flex justify-center items-center -mt-4'>
-				<img src={noFiles2} className='aspect-auto w-[220px] lg:w-[200px]' />
+				<img src={noFiles2} className='aspect-auto w-[220px] lg:w-[200px]' loading="lazy"  alt="no data image" />
 			</div>
 			<div className='flex flex-col px-6 justify-center items-center w-full -mt-5'>
 				{" "}

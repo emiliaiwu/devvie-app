@@ -46,6 +46,8 @@ const Header = () => {
 						<img
 							src={userProfile.coverPhoto}
 							className='w-full md:h-[200px] h-[150px] object-cover'
+							loading='lazy'
+							alt='banner image'
 						/>
 					</div>
 				)}

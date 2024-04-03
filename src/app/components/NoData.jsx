@@ -7,7 +7,7 @@ const NoData = ({title, paragraph}) => {
 	return (
 		<div className='w-full h-full flex justify-center items-center flex-col'>
 			<div className='flex justify-center items-center'>
-				<img src={noFiles} className='w-full aspect-auto lg:w-[500px]' />
+				<img src={noFiles} className='w-full aspect-auto lg:w-[500px]' loading="lazy"  alt="No data image"/>
 			</div>
 			<div className='flex flex-col -mt-10'>
 				<h1

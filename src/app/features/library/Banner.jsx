@@ -35,7 +35,9 @@ const Banner = () => {
 				<div className='overflow-hidden hidden sm:flex '>
 					<img
 						src={libraryImg}
+						alt="banner image"
 						className='h-[250px] w-auto absolute right-0 bottom-0'
+						loading='lazy'
 					/>
 				</div>
 			</div>
