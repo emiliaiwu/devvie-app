@@ -85,11 +85,7 @@ const App = () => {
 		)
 	);
 
-	return (
-		<Suspense fallback={<DevvieLoader />}>
-			<RouterProvider router={router} />
-		</Suspense>
-	);
+	return <RouterProvider router={router} />;
 };
 
 export default App;
